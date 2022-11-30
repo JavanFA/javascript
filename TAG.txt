@@ -1,0 +1,24 @@
+Curso de Javascript do Curso em Vídeo
+-------------------------------------------------------
+
+Variáveis e tipos primitivos:
+
+* number < 5, 18, -12, 0.5, -12.6, etc.
+* string < "palavra", 'palavra', `palavra`.
+
+var ou let < variável
+= < Recebe
+
+* Qualquer uma das 3 opções acima funciona.
+
+Identificadores:
+- Regras
+* Podem começar com letra, $ ou _
+* Não podem começar com números
+* É possível usar acentos e símbolos
+* Não podem conter espaços (no lugar usar _)
+* Não pode usar palavras reservadas (alert, fuction, var, etc.)
+
+- Dicas
+* Letras maiúsculas e minúsculas fazem diferença (A, a, B, b, etc.)
+* Tentar escolher nomes coerentes para as variáveis
