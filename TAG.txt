@@ -3,13 +3,17 @@ Curso de Javascript do Curso em Vídeo
 
 Variáveis e tipos primitivos:
 
-* number < 5, 18, -12, 0.5, -12.6, etc.
-* string < "palavra", 'palavra', `palavra`.
+typeof < comando para saber o tipo primitivo
+* Number < 5, 18, -12, 0.5, -12.6, etc.
+* String < "palavra", 'palavra', `palavra`.
+* Boolean < true & false
+* Objetc < {}, []
+* Function < function(), function{}
+* Undefined < undefined
 
 var ou let < variável
 = < Recebe
-
-* Qualquer uma das 3 opções acima funciona.
+Qualquer uma das 3 opções acima funciona.
 
 Identificadores:
 - Regras
