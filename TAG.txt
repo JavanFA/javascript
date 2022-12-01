@@ -72,3 +72,13 @@ Prompt < caixa de pergunta
 Confirm < Aparece uma caixa para confirmar
 write < Escreve a mensagem na tela
 writeln < Escreve a mensagem na linha de baixo
+
+Operadores:
+
+---aritméticos---
++ < adição 5 + 2 = 7
+- < subtração | 5 - 2 = 3
+* < multiplicação | 5 * 2 = 10
+/ < divisão real | 5 / 2 = 2,5
+% < o resto da divisão inteira | 5 % 2 = 1
+** < potência | 5 ** 2 = 25
