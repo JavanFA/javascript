@@ -13,7 +13,9 @@ typeof < comando para saber o tipo primitivo
 
 var ou let < variável
 = < Recebe
-Qualquer uma das 3 opções acima funciona.
++ < Contatenação, ligação e adição. 
+  * (number + number) < adição
+  * (string + string) < concatenação
 
 Identificadores:
 - Regras
@@ -26,3 +28,47 @@ Identificadores:
 - Dicas
 * Letras maiúsculas e minúsculas fazem diferença (A, a, B, b, etc.)
 * Tentar escolher nomes coerentes para as variáveis
+
+Conversão de tipos primitivos:
+
+* String para número
+	Number.parseInt(n) < converte em números inteiros
+	Number.parseFloat(n) < converte em números reais
+	Number(n) < o Javascript decide se os valores digitados são inteiros ou reais
+
+* Número para String
+	String(n) < Converte número em uma string
+	n.toString() < Converte número para uma string
+
+Formatação de Números:
+
+var n1 = '1545.5'
+n1.toFixed() < Quantas casas depois da vírgula vão aparecer
+  * ex: n1.toFixed(2) = 1545.50
+.replace('' , '') Faz a troca de uma coisa por outra
+  * ex: n1.toFixed(2).replace('.' , ',') = 1545,50
+.toLocaleString < colocar alguma região do mundo
+  * ex: n1.toLocaleString('pt-BR')
+----- Como converter para Real brasileiro -----
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+'currency' < moeda
+currency: < moeda de qual país
+BRL < Real brasileiro
+
+Formatação de String:
+
+var s = 'javascript'
+'Eu estou aprendendo S' < não faz interpolação
+'Estou aprendendo ' + s < usa concatenação
+`Estou aprendendo ${s}` < usa template  string (Tem que usar crase ``)
+s.length < quantos caracteres a string tem
+s.toUpperCase() < tudo para maiúsculas
+s.toLowerCase() < tudo para minúsculas
+
+Comandos:
+
+Alert < mostra a mensagem na tela
+Prompt < caixa de pergunta
+Confirm < Aparece uma caixa para confirmar
+write < Escreve a mensagem na tela
+writeln < Escreve a mensagem na linha de baixo
