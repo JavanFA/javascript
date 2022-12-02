@@ -75,10 +75,96 @@ writeln < Escreve a mensagem na linha de baixo
 
 Operadores:
 
----aritméticos---
-+ < adição 5 + 2 = 7
+---Operadores aritméticos---
+
++ < adição | 5 + 2 = 7
 - < subtração | 5 - 2 = 3
 * < multiplicação | 5 * 2 = 10
 / < divisão real | 5 / 2 = 2,5
 % < o resto da divisão inteira | 5 % 2 = 1
 ** < potência | 5 ** 2 = 25
+
+var n = 3
+- n = n + 4
+N passa a valer 7
+- n = n * 2
+N passa a valer 14
+
+Se a autoatribuição for apenas com a variável + um número, podemos escrever assim:
+n += 4
+n *= 2
+e assim sucessivamente
+
+----------------------
+ordem de precedência |
+()       |           |
+**       |           |
+* / %    |           |
++ -      v           |
+----------------------
+
+--Operadores de incremento---
+
+x++ < x = x + 1 Se o x tiver antes do ++, a soma aparece depois (x++), se o x estiver após o ++, a soma já aparece na hora (++x).
+x-- < x = x - 1 Se o x tiver antes do --, a subtração aparece depois (x--), se o x estiver após o --, a subtração já aparece na hora (--x)
+
+---Operadores relacionais---
+
+> < Maior que
+< < Menor que
+>= < Maior ou igual
+<= < Menor ou igual
+== < Igual
+!= < Diferente/não igual
+
+-----------------------------------------------------------------
+Operadores relacionais não tem ordem de precedência, ou seja,   |
+se ler da esquerda pra direita                                  |
+-----------------------------------------------------------------
+
+---Operadores de identidade---
+
+=== < igualdade restrita, se os números são idÊnticos, com mesmo valor e tipo.
+!== < desigualdade restrita, o mesmo esquema do ===
+ex: 5 == '5' < true
+    5 === '5' < false porque não são de mesmo tipo, um é number o outro é string.
+    5 != '5' < false
+    5 === '5' < true
+
+---Operadores lógicos---
+
+! < negação 
+	true == false
+	false == true
+&& < conjunção (e) binário
+	true true == true
+	true false == false
+	false true == false
+	false false == false
+|| < disjunção (ou) binário
+	true true == true
+	true false == true
+	false true == true
+	false false == false
+
+----------------------
+ordem de precedência |
+!       | Não        |
+&&      | E          |
+||      v Ou         |
+----------------------
+
+---Operadores ternários---
+
+? < quando o resultado do teste for true
+: < quando o resultado do teste for false
+----------------------------------
+Teste | ? |  true  | : |  false  |
+----------------------------------
+EX: média >= 7.0 ? 'Aprovado' : 'Reprovado'
+
+
+--------------------------------------------------------------
+ORDEM DE PRECENDÊNCIAS DE OPERADORES DENTRO DE UMA EXPRESÃO: |
+ARITMÉTICOS - RELACIONAIS - LÓGICOS - TERNÁRIOS              |
+--------------------------------------------------------------
