@@ -168,3 +168,14 @@ EX: média >= 7.0 ? 'Aprovado' : 'Reprovado'
 ORDEM DE PRECENDÊNCIAS DE OPERADORES DENTRO DE UMA EXPRESÃO: |
 ARITMÉTICOS - RELACIONAIS - LÓGICOS - TERNÁRIOS              |
 --------------------------------------------------------------
+
+DOM
+
+Selecionado:
+
+Por marca < getElementsByTagName('')[]
+Por ID <  getElementByID('')
+Por Nome < getElementsByName('')[]
+Por Classe < getElementsByClassName('')[]
+Por Seletor < querySelector() querySelectorAll()  < usa os seletores em CCS
+Ex: querySelector(div#id) (div.class) 
